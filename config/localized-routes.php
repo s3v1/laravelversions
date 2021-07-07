@@ -10,6 +10,7 @@ return [
         'de',
         'es',
         'fr',
+        'id',
         'it',
         'lt',
         'pl',
@@ -18,6 +19,7 @@ return [
         'ru',
         'vi',
         'ja',
+        'zh_CN',
     ],
 
     /**
@@ -28,6 +30,7 @@ return [
         'de' => 'Deutsch',
         'es' => 'Español',
         'fr' => 'Français',
+        'id' => 'Bahasa Indonesia',
         'it' => 'Italiano',
         'lt' => 'Lietuvių',
         'pl' => 'Polski',
@@ -36,6 +39,7 @@ return [
         'ru' => 'Русский',
         'vi' => 'Tiếng Việt',
         'ja' => '日本語',
+        'zh_CN'=>'简体中文',
     ],
 
     /**
@@ -44,7 +48,16 @@ return [
      *
      * 'omit_url_prefix_for_locale' => 'en',
      */
-    'omit_url_prefix_for_locale' => 'en',
+    // 'omit_url_prefix_for_locale' => 'en',
+
+    /**
+     * So the home page / would be redirected to /en
+     * if the active locale is en and the /en route exists.
+     * And /about would redirect to /en/about.
+     *
+     * 'redirect_to_localized_urls' => true,
+     */
+    'redirect_to_localized_urls' => true,
 
     /**
      * If you want to automatically set the locale
